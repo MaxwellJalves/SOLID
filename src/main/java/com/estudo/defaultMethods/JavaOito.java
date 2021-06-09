@@ -15,17 +15,37 @@ public class JavaOito {
         palavras.add("casa");
         palavras.add("agua");
 
+        //Respeitando a Ordem de Adição de elementos
         System.out.println(palavras);
 
-        System.out.println("Utilizando Collecttions Sort - ordenando em ordem alfabetica");
+        //Removendo por nome
+        palavras.remove("dedo");
+
+        //Imprimindo cada elemento e uma linha diferente
+        palavras.forEach(e->System.out.println(e));
+
+        //imprimindo o primeiro elemento pelo index
+        System.out.println(palavras.get(0));
+
+        //Imprimindo os dados da forma antiga
+        for(int i=0 ; i< palavras.size();i++ ){
+            System.out.println("-----"+palavras.get(i));
+        }
+
+        System.out.println("[-Utilizando Collecttions Sort - ordenando em ordem alfabetica-]");
         Collections.sort(palavras);
         System.out.println(palavras);
 
-        System.out.println("Utilizando Comparator");
+        System.out.println("[-Utilizando Comparator-]");
         Comparator<String> comparar = new ComparaPorTamanho();
-        Collections.sort(palavras,comparar);
 
+        Collections.sort(palavras,comparar);
         System.out.println(palavras);
+
+        Collections.reverse(palavras);
+        System.out.println("[-Invertendo a Lógica de saida-]");
+        System.out.println(palavras);
+
 
     }
 

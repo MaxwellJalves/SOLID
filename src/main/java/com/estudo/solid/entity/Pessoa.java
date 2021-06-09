@@ -14,21 +14,6 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
     public String  getPessoa(){
         return
                 "id :" + id +
