@@ -1,4 +1,4 @@
-package com.estudo.defaultMethods;
+package com.estudo.javaoito;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /** Revisão Java*/
-public class JavaOito {
+public class JavaOitoDefaultMethods {
 
     public static void main(String[] args){
         List<String> palavras = new ArrayList<>();
@@ -30,6 +30,10 @@ public class JavaOito {
         //Imprimindo os dados da forma antiga
         for(int i=0 ; i< palavras.size();i++ ){
             System.out.println("-----"+palavras.get(i));
+        }
+
+        for(String s : palavras){
+            System.out.println(s.toUpperCase());
         }
 
         System.out.println("[-Utilizando Collecttions Sort - ordenando em ordem alfabetica-]");
